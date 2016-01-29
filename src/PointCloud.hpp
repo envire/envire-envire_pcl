@@ -7,9 +7,9 @@
 #include <boost/serialization/vector.hpp>
 
 
-namespace envire { namespace type
+namespace envire { namespace pcl
 {
-    class PointCloud : public envire::core::Item< pcl::PCLPointCloud2 >
+    class PointCloud : public envire::core::Item< ::pcl::PCLPointCloud2 >
     {
         ENVIRE_PLUGIN_HEADER(PointCloud)
     };
@@ -19,7 +19,7 @@ namespace envire { namespace type
 namespace boost { namespace serialization {
 
     template<class Archive>
-    void serialize(Archive & ar, pcl::PCLPointCloud2 & pointcloud, const unsigned int version)
+    void serialize(Archive & ar, ::pcl::PCLPointCloud2 & pointcloud, const unsigned int version)
     {
         ar & boost::serialization::make_nvp("header", pointcloud.header);
         ar & boost::serialization::make_nvp("height", pointcloud.height);
@@ -33,7 +33,7 @@ namespace boost { namespace serialization {
     }
 
     template<class Archive>
-    void serialize(Archive & ar, pcl::PCLHeader & header, const unsigned int version)
+    void serialize(Archive & ar, ::pcl::PCLHeader & header, const unsigned int version)
     {
         ar & boost::serialization::make_nvp("seq", header.seq);
         ar & boost::serialization::make_nvp("stamp", header.stamp);
@@ -41,7 +41,7 @@ namespace boost { namespace serialization {
     }
 
     template<class Archive>
-    void serialize(Archive & ar, pcl::PCLPointField & field, const unsigned int version)
+    void serialize(Archive & ar, ::pcl::PCLPointField & field, const unsigned int version)
     {
         ar & boost::serialization::make_nvp("name", field.name);
         ar & boost::serialization::make_nvp("offset", field.offset);
