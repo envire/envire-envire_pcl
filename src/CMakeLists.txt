@@ -3,3 +3,5 @@ rock_library(envire_pcl
     HEADERS PointCloud.hpp
     DEPS_CMAKE Boost
     DEPS_PKGCONFIG pcl_common-1.7 class_loader envire_core)
+
+install_plugin_info(envire_pcl)
