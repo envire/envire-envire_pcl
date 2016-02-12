@@ -1,5 +1,3 @@
 #include "PointCloud.hpp"
 
-using namespace envire::pcl;
-
-ENVIRE_REGISTER_PLUGIN( PointCloud )
+ENVIRE_REGISTER_PLUGIN( envire::pcl::PointCloud )

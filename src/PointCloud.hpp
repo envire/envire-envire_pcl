@@ -11,7 +11,7 @@ namespace envire { namespace pcl
 {
     class PointCloud : public envire::core::Item< ::pcl::PCLPointCloud2 >
     {
-        ENVIRE_PLUGIN_HEADER(PointCloud)
+        ENVIRE_PLUGIN_HEADER(envire::pcl::PointCloud)
     };
 }}
 
