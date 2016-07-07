@@ -1,19 +1,8 @@
 #pragma once
 
-#include <envire_core/items/Item.hpp>
-#include <envire_core/plugin/Plugin.hpp>
 #include <pcl/PCLPointCloud2.h>
 #include <boost/serialization/nvp.hpp>
 #include <boost/serialization/vector.hpp>
-
-
-namespace envire { namespace pcl
-{
-    class PointCloud : public envire::core::Item< ::pcl::PCLPointCloud2 >
-    {
-        ENVIRE_PLUGIN_HEADER(envire::pcl::PointCloud)
-    };
-}}
 
 
 namespace boost { namespace serialization {

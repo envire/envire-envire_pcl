@@ -1,5 +1,5 @@
 <library path="envire_pcl">
-  <class class_name="envire::pcl::PointCloud" base_class_name="envire::core::ItemBase">
+    <class class_name="envire::core::Item<pcl::PCLPointCloud2>" base_class_name="envire::core::ItemBase">
     <description>PCL Pointcloud plugin</description>
     <associations>
       <class class_name="pcl::PCLPointCloud2"></class>
