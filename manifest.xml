@@ -35,4 +35,6 @@
   <depend package="base/types" />
   <depend package="envire/envire_core" />
   <depend package="slam/pcl" />
+  <depend package="gui/vizkit3d_pcl" optional="1" />
+
 </package>
