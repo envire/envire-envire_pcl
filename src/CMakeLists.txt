@@ -1,5 +1,10 @@
 find_package(PCL 1.8 REQUIRED COMPONENTS common)
 
+# Default to C++14 (PCL requirement)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
 rock_library(envire_pcl
     SOURCES PointCloud.cpp
     HEADERS PointCloud.hpp
