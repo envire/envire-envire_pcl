@@ -1,4 +1,5 @@
 find_package(PCL 1.8 REQUIRED COMPONENTS common)
+find_package(Boost REQUIRED COMPONENTS thread)
 
 # Default to C++14 (PCL requirement)
 if(NOT CMAKE_CXX_STANDARD)
