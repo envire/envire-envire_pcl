@@ -30,5 +30,11 @@
       <class class_name="pcl::PCLPointCloud2"></class>
     </associations>
   </class>
+  <class class_name="envire::core::Item<pcl::PointCloud<pcl::PointXYZ>>" base_class_name="envire::core::ItemBase">
+    <description>PCL Pointcloud plugin</description>
+    <associations>
+      <class class_name="pcl::PointCloud<pcl::PointXYZ>"></class>
+    </associations>
+  </class>
 </library>
 

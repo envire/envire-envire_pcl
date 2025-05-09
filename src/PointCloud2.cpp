@@ -24,7 +24,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
-#include "PointCloud.hpp"
+#include "PointCloud2.hpp"
 #include <envire_core/plugin/Plugin.hpp>
 
 ENVIRE_REGISTER_ITEM( pcl::PCLPointCloud2 )

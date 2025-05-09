@@ -9,8 +9,8 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 rock_library(envire_pcl
-    SOURCES PointCloud.cpp
-    HEADERS PointCloud.hpp
+    SOURCES PointCloud2.cpp PointCloudXYZ.cpp
+    HEADERS PointCloud2.hpp PointCloudXYZ.hpp
     DEPS_PKGCONFIG pcl_common${PCL_VERSION_SUFFIX} envire_core)
 
 install_plugin_info(envire_pcl)
