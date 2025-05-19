@@ -24,8 +24,8 @@
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <library path="envire_pcl">
-    <class class_name="envire::core::Item<pcl::PCLPointCloud2>" base_class_name="envire::core::ItemBase">
-    <description>PCL Pointcloud plugin</description>
+  <class class_name="envire::core::Item<pcl::PCLPointCloud2>" base_class_name="envire::core::ItemBase">
+    <description>PCL Pointcloud2 plugin</description>
     <associations>
       <class class_name="pcl::PCLPointCloud2"></class>
     </associations>
@@ -36,5 +36,10 @@
       <class class_name="pcl::PointCloud<pcl::PointXYZ>"></class>
     </associations>
   </class>
+  <class class_name="envire::core::Item<pcl::PolygonMesh>" base_class_name="envire::core::ItemBase">
+    <description>PCL PolygonMesh plugin</description>
+    <associations>
+      <class class_name="envire::core::Item<pcl::PolygonMesh>"></class>
+    </associations>
+  </class>
 </library>
-
